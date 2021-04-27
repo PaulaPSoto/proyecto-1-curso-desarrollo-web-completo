@@ -5,26 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Curso</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;0,900;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/main.css" as="style">
+    <link rel="stylesheet" href="css/main.css"  />
+
   </head>
   <body>
     <header>
-      <h1>Paula Páez Soto</h1>
-      <nav></nav>
+      <h1 class="header__name">Paula Páez Soto <span class="header__job"> Desarrolladora Front-End</span></h1>
     </header>
+
+    <div class="nav__bagr">
+    <nav class="container nav__main">
+      <a class="nav__main--link" href="https://github.com/PaulaPSoto">GitHub</a>
+      <a class="nav__main--link" href="https://www.linkedin.com/in/paulapsoto/">Linkedin</a>
+      <a  class="nav__main--link"href="https://twitter.com/Pitas_pitas_">Twiter</a>
+      <a class="nav__main--link" href="#">Sobre mí</a>
+    </nav>
+   </div>
     <section>
       <h2>Desarrolladora Front-End</h2>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="icon icon-tabler icon-tabler-map-pin"
+        width="84"
+        height="84"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="#FFC107"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <circle cx="12" cy="11" r="3" />
+        <path
+          d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"
+        />
+      </svg>
       <p>A Coruña, España</p>
+      <a href="#">Contactar</a>
     </section>
     <main>
       <h2>Mis hobbies</h2>
+
       <section>
         <h3>Diseño Web</h3>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-palette"
+          width="40"
+          height="40"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#000000"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path
+            d="M12 21a9 9 0 1 1 0 -18a9 8 0 0 1 9 8a4.5 4 0 0 1 -4.5 4h-2.5a2 2 0 0 0 -1 3.75a1.3 1.3 0 0 1 -1 2.25"
+          />
+          <circle cx="7.5" cy="10.5" r=".5" fill="currentColor" />
+          <circle cx="12" cy="7.5" r=".5" fill="currentColor" />
+          <circle cx="16.5" cy="10.5" r=".5" fill="currentColor" />
+        </svg>
         <p>
           Sit amet consectetur adipisicing elit. Debitis dolores cumque mollitia
           possimus assumenda, fugit natus laudantium.
@@ -32,6 +80,24 @@
       </section>
       <section>
         <h3>Costura</h3>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-cut"
+          width="40"
+          height="40"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#000000"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="7" cy="17" r="3" />
+          <circle cx="17" cy="17" r="3" />
+          <line x1="9.15" y1="14.85" x2="18" y2="4" />
+          <line x1="6" y1="4" x2="14.85" y2="14.85" />
+        </svg>
         <p>
           Sit amet consectetur adipisicing elit. Debitis dolores cumque mollitia
           possimus assumenda, fugit natus laudantium.
@@ -39,6 +105,24 @@
       </section>
       <section>
         <h3>Mini universos vegetales</h3>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-plant"
+          width="40"
+          height="40"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#000000"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M7 15h10v4a2 2 0 0 1 -2 2h-6a2 2 0 0 1 -2 -2v-4z" />
+          <path d="M12 9a6 6 0 0 0 -6 -6h-3v2a6 6 0 0 0 6 6h3" />
+          <path d="M12 11a6 6 0 0 1 6 -6h3v1a6 6 0 0 1 -6 6h-3" />
+          <line x1="12" y1="15" x2="12" y2="9" />
+        </svg>
         <p>
           Sit amet consectetur adipisicing elit. Debitis dolores cumque mollitia
           possimus assumenda, fugit natus laudantium.
@@ -46,6 +130,30 @@
       </section>
       <section>
         <h2>Contacto</h2>
+        <form action="">
+          <fieldset>
+            <legend>Contacta conmigo rellenando todos los campos</legend>
+            <div>
+              <label for="">Nombre</label>
+              <input type="text" placeholder="Tu nombre" />
+            </div>
+            <div>
+              <label for="">Teléfono</label>
+              <input type="tel" placeholder="Tu teléfono" />
+            </div>
+            <div></div>
+            <label for="" Correo>Correo</label>
+            <input type="email" placeholder="Tu correo" />
+          </div>
+          <div>
+            <label for="">Mensaje</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          </div>
+          <div>
+            <button type="submit">Enviar</button>
+          </div>
+          </fieldset>
+        </form>
       </section>
     </main>
     <footer>

@@ -1,0 +1,51 @@
+/* General */
+:root {
+  --white: #ffffff;
+  --black: #212121;
+  --first: #ffc107;
+  --second: #0097a7;
+  --third: #757575;
+}
+html {
+  font-size: 65.5%;
+}
+body {
+  font-family: "Krub", sans-serif;
+  font-size: 16px;
+  /*1rem = 10px*/
+}
+.container {
+  width: 120rem;
+  margin: 0 auto;
+}
+/* Header */
+.header__name {
+  text-align: center;
+}
+.header__job {
+  font-size: 2rem;
+}
+.nav__bagr {
+  background-color: var(--second);
+}
+.nav__main {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+.nav__main--link {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1, 5rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+.nav__main--link:hover {
+  background-color: var(--first);
+  color: var(--black);
+}
+
+@media (min-width: 768px) {
+}
+@media (min-width: 1200px) {
+}
