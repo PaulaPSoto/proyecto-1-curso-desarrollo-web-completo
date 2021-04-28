@@ -129,6 +129,7 @@ body {
 
 .service__hobby {
   color: var(--second);
+  font-weight: normal;
 }
 .service__icons {
   width: 10rem;
@@ -142,8 +143,10 @@ body {
 .service__text {
   line-height: 2;
   text-align: center;
+  font-size: 1.5rem;
 }
-@media (min-width: 768px) {
+/* FORM */
+. @media (min-width: 768px) {
   .nav__main {
     flex-direction: row;
   }
