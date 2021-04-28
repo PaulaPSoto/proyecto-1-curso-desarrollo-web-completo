@@ -14,6 +14,7 @@
     <link rel="preload" href="css/main.css" as="style" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
+
   <body>
     <!-- HEADER -->
     <header>
@@ -163,36 +164,62 @@
 
       <!-- SECTION FORM -->
       <section>
-        <h2>Contacto</h2>
+        <h2 class="contact__text">Contacto</h2>
 
-        <form class="form">
-          <fieldset>
-            <legend>Contacta conmigo rellenando todos los campos</legend>
-            <div>
-              <label for="">Nombre</label>
-              <input type="text" placeholder="Tu nombre" />
+        <form class="form" action="#" method="POST">
+          <fieldset class="form__box">
+            <legend class="form__text">
+              Contacta conmigo rellenando todos los campos
+            </legend>
+
+            <div class="form__container">
+              <div class="campo">
+                <label class="form__label">Nombre</label>
+                <input
+                  class="form__input"
+                  type="text"
+                  placeholder="Tu nombre"
+                />
+              </div>
+              <div class="campo">
+                <label class="form__label" for="">Teléfono</label>
+                <input
+                  class="form__input"
+                  type="tel"
+                  placeholder="Tu teléfono"
+                />
+              </div>
+              <div class="campo w-100">
+                <label class="form__label" for="" Correo>Correo</label>
+                <input
+                  class="form__input"
+                  type="mail"
+                  placeholder="Tu correo"
+                />
+              </div>
+              <div class="campo w-100">
+                <label class="form__label" for="text">Mensaje</label>
+                <textarea
+                  class="form__input"
+                  name="text"
+                  id=""
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
             </div>
-            <div>
-              <label for="">Teléfono</label>
-              <input type="tel" placeholder="Tu teléfono" />
-            </div>
-            <div>
-              <label for="" Correo>Correo</label>
-              <input type="email" placeholder="Tu correo" />
-            </div>
-            <div>
-              <label for="">Mensaje</label>
-              <textarea name="" id="" cols="30" rows="10"></textarea>
-            </div>
-            <div>
-              <button type="submit">Enviar</button>
+            <!--END FORM__CONTAINER -->
+
+            <div class="send align__right flex">
+              <input class="button w-sm-100" type="submit" value="Enviar" />
             </div>
           </fieldset>
         </form>
       </section>
     </main>
 
-    <footer>
+    <!-- FOOTER -->
+    <footer class="foot">
       <p>Todos los derechos reservados. Paula Páez Soto</p>
     </footer>
   </body>
